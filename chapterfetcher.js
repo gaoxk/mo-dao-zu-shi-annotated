@@ -7,21 +7,18 @@ function loadChapter (num) {
 }
 
 function setChapter (num) {
-    $("#chapter select").val(num);
+    $("#chapter").val(num);
 }
 
-function loadLastChapter () {
-    const chapter = Math.max(parseint(getCurrentChapterNumber())-1, 1);
-    loadCorrectChapter(chapter);
+function loadConsecutiveChapter (last) {
+    const chapter = last ? Math.max(parseInt(getCurrentChapterNumber())-1, 1) :  Math.min(parseInt(getCurrentChapterNumber())+1, 126);
+    loadChapter(chapter);
     setChapter(chapter);
 }
 
-function loadNextChapter () {
-    const chapter = Math.min(parseint(getCurrentChapterNumber())+1, 126);
-    loadCorrectChapter(chapter);
-    setChapter(chapter);
-}
+$("#chapter").change(() => loadChapter(getCurrentChapterNumber()));
 
-$("#chapter").change(loadChapter(getCurrentChapterNumber()));
-   
+$("#lastChapter").click(() => loadConsecutiveChapter(true));
+$("#nextChapter").click(() => loadConsecutiveChapter(false));
+
 loadChapter(getCurrentChapterNumber());
