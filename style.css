@@ -1,10 +1,15 @@
 body {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(255, 253, 240);
 }
 
 h1 {
-    font-family: 'Merriweather', serif;
-    margin-left: 30px;
+  font-family: 'Merriweather', serif;
+  margin-left: 30px;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
 }
 
 label {
@@ -12,15 +17,20 @@ label {
 }
 
 a {
-    color: grey;
+  color: grey;
 }
 
-#dropdowntodaground {
-    margin-left: 40px;
-    margin-bottom: 2em;
+#chapter-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+#chapter-header > * {
+  margin: 5px;
 }
 
 #chapterblob {
-    margin: auto;
-    width: 70%;
+  margin: auto;
+  width: 70%;
 }
