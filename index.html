@@ -1,22 +1,30 @@
 <!DOCTYPE html>
+<head>
+    <title>魔道祖师 Annotated</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
+</head>
 <html>
     <body>
         <h1>魔道祖师 (Mó Dào Zǔ Shī) with MandarinSpot Annotations</h1>
-        <p id="chinesetext">To use the annotations, simply hover over chinese texts: 像这个</p>
-        <p>todo: dark modedeeededededed and ambient modedeeedededededi https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp</p>
-        <ul>
-            <li><a href="https://exiledrebelsscanlations.com/gdc-character-and-sect-guide/">Character and Sect Sheet</a> by Exiled Rebels Scanlations</li>
-            <li><a href="./chapter.html">Read Chapters</a></li>
-        </ul>
-        <p>Miss annotation or bug? Open an issue.</p>
-        <p>魔道祖师 is written by 墨香铜臭. This website uses the free MandarinSpot
-    annotations api to provide an easy reading experience to those looking to improve their Chinese reading skills.
-        </p>
-        <p>The only thing I own is the open source code for this website.
-    If requested by MandarinSpot or 墨香铜臭, I may close source the code and take down this website.
-        </p>
-        <p>If you can, please support 墨香铜臭 by purchasing the book, reading the official translated manhua, or watching the donghua or live action.</p>
-
+        <div id="chapterblob">
+            <p id="chinesetext">To use the annotations, simply hover over or click Chinese texts: 像这个</p>
+            <p>todo: dark modedeeededededed and ambient modedeeedededededi https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp</p>
+            <ul>
+                <li><a href="https://exiledrebelsscanlations.com/gdc-character-and-sect-guide/">Character and Sect Sheet</a> by Exiled Rebels Scanlations</li>
+                <li><a href="./chapter.html">Read Chapters</a></li>
+            </ul>
+            <hr>
+            <p>Miss annotation? Bug? Feedback? Open an issue.</p>
+            <p>魔道祖师 is written by 墨香铜臭. This website uses the free MandarinSpot
+        annotations api to provide an easy reading experience to those looking to improve their Chinese reading skills.
+            </p>
+            <p>The only thing I own is the open source code for this website, with an exception to the chapter folders and the minified MandarinSpot code.
+        If requested by MandarinSpot or 墨香铜臭, I may close source the code and take down this website.
+            </p>
+            <p>If you can, please support 墨香铜臭 by purchasing the book, reading the official translated manhua, or watching the donghua or live action.
+        Check out MandarinSpot if you're interested in improving your Chinese.</p>
+        </div>
         <script src="./mandarinspot.min.js" charset="UTF-8"></script>
         <script>mandarinspot.annotate('#chinesetext');</script>
     </body>

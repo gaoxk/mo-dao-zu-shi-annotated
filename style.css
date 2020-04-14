@@ -1,0 +1,26 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    margin-left: 30px;
+}
+
+label {
+  margin-right: 0.5em;
+}
+
+a {
+    color: grey;
+}
+
+#dropdowntodaground {
+    margin-left: 40px;
+    margin-bottom: 2em;
+}
+
+#chapterblob {
+    margin: auto;
+    width: 70%;
+}

@@ -1,6 +1,7 @@
-function setChineseTextDiv (chapterNumber) {
-    document.getElementById("chinesetext").innerHTML = "<object type=\"text/html\" data=./chapters/chapter" + chapterNumber + ".html\"></object>";
+function loadCorretChapter () {
+    $("#chapterblob").load("./chapters/"+ $("#chapter option:selected").val() +".html");
 }
 
-//setChineseTextDiv(1);
-$("#chinesetext").load("./chapters/chapter1.html");
+$("#chapter").change(loadCorretChapter);
+   
+loadCorretChapter();
